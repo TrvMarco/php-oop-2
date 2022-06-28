@@ -2,6 +2,7 @@
     require_once __DIR__ . '/classes/product.php';
     require_once __DIR__ . '/classes/food.php';
     require_once __DIR__ . '/classes/toy.php';
+    require_once __DIR__ . '/classes/user.php';
     
     $food = [
         new Food('Monge Adult', 23 , 12, 'Cane','Crochette','10/12/23'),
@@ -13,5 +14,12 @@
         new Toy('Tiragraffi', 21, 5, 'Gatto', 'Gioco e cura delle unghie', 'Taglia L')
     ];
 
+    $user = [
+        new User('Marco', 'Trevisanello', 'marcoboolean@gmail.com')
+    ];
+
     $product = [$food, $toy];
+
+    var_dump($product);
+    var_dump($user);
     
